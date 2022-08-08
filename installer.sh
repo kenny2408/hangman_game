@@ -16,3 +16,19 @@ mkdir "hangman_game"
 cd hangman_game
 path-$(pwd)
 
+curl https://github.com/kenny2408/hangman_game/blob/master/main.py > main.py
+curl https://github.com/kenny2408/hangman_game/blob/master/data > data
+# shellcheck disable=SC2034
+# shellcheck disable=SC2154
+data_path="$path/data"
+
+# sed -i -e 's/pattern_to_search/text_to_replace/' file.txt
+sed -i -e 's,DATA_PATH,'"$data_path"',g' main.py
+
+# sed s,DATA_PATH,$data_path,g main.py > main.py
+# shellcheck disable=SC2164
+cd /home/"$USER"
+cat .bashrc > .bashrc_copy
+echo 'alias hangman="python3 '"$path"'/main.py"' >> .bashrc
+echo "Successfully installed Hangman Game by Kenny Escalante, remember have python3 installed too."
+echo "Please restart the terminal. Then, start playing with 'hangman' command."

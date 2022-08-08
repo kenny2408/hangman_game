@@ -10,7 +10,7 @@ V 1.0
 
 Download on your computer the [[installer]][installer] file, you can do it manually or do it from terminal with:
 
-`curl https://raw.githubusercontent.com/santigo171/python-hangman/main/installer.sh > installer.sh`
+`curl https://github.com/kenny2408/hangman_game/blob/master/installer.sh`
 
 Then give the execution permission to the file with:
 `chmod +x installer.sh`
@@ -26,4 +26,4 @@ if you are in Windows 10, create an alias like this:
 
 In both cases, restart the terminal and make an `hangman -c` to configurate the game.
 
-[installer]: https://github.com/santigo171/python-hangman/blob/main/installer.sh "installer"
+[installer]: https://github.com/kenny2408/hangman_game/blob/master/installer.sh "installer"
